@@ -1,0 +1,35 @@
+@media only screen and (min-width: 320PX) and (max-width:359PX) {
+    html {
+        font-size:85.3333PX
+    }
+}
+
+@media only screen and (min-width: 360PX) and (max-width:374PX) {
+    html {
+        font-size:96PX
+    }
+}
+
+@media only screen and (min-width: 375PX) and (max-width:389PX) {
+    html {
+        font-size:100PX
+    }
+}
+
+@media only screen and (min-width: 390PX) and (max-width:413PX) {
+    html {
+        font-size:104PX
+    }
+}
+
+@media only screen and (min-width: 414PX) and (max-width:639PX) {
+    html {
+        font-size:110.4PX
+    }
+}
+
+@media screen and (min-width: 640PX) {
+    html {
+        font-size:170.6667PX
+    }
+}

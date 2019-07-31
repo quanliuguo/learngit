@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script language="javascript">
+      var phoneWidth = parseInt(window.screen.width);
+      var phoneScale = phoneWidth / 750;
+      var ua = navigator.userAgent;
+      var viewportContents = ['width=750', 'target-densitydpi=device-dpi', 'viewport-fit=contain'];
+      if (/Android (\d+\.\d+)/.test(ua)) {
+          var version = parseFloat(RegExp.$1);
+          if (version > 2.3) {
+              viewportContents.push('minimum-scale=' + phoneScale, 'maximum-scale=' + phoneScale);
+          }
+      } else {
+          viewportContents.push('user-scalable=no');
+      }
+      document.write('<meta name="viewport" content="' + viewportContents.join(',') + '">');
+  </script>
+  <meta name="viewport" content="width=750,target-densitydpi=device-dpi,viewport-fit=contain,user-scalable=no">
+  <!-- <meta name="viewport"   content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
+  <title>梵几·家具品牌 fnji furniture online shop</title>
+  <!-- <link rel="stylesheet" href="./src/assets/css/PhoneJD.css"> -->
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1306636_wlc04wx7f2d.css">
+  <style>
+      .aaa{
+    transform: scale(2,2);
+    -ms-transform: scale(2,2);	/* IE 9 */
+    -webkit-transform: scale(2,2) translate(-30%);	/* Safari 和 Chrome */
+    -o-transform: scale(2,2);	/* Opera */
+    -moz-transform: scale(2,2);	/* Firefox */
+  }
+  </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
